@@ -1,7 +1,7 @@
 # Robotics_seminar
 Instructions to setup your computer for the second session of the robotics webinar series
 
-# ROS Noetic Installation
+# ROS Noetic Installation (for Ubuntu 20.04)
 
 Setup your computer to accept ROS related software
 
@@ -57,7 +57,7 @@ pip3 install catkin_tools
 
 Setup VS code as text editor
 
-# ROS Melodic Installation
+# ROS Melodic Installation (for Ubuntu 18.04)
 
 Setup your computer to accept ROS related software
 
@@ -112,7 +112,7 @@ pip3 install catkin_tools
 
 Setup VS code as text editor
 
-# ROS Kinetic Installation
+# ROS Kinetic Installation (for Ubuntu 16.04)
 
 Setup your computer to accept ROS related software
 
