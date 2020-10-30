@@ -20,7 +20,7 @@ Depending on the Ubuntu Operating system you are using, the setup instructions m
 
 ## **ROS Workspace and Packages**
 
-This section ties to the Video [Session 2](https://www.youtube.com/watch?v=GfUcsottFmU) titled Communication infrastructure of ROS (Part-1). Click [here](/Snippets/basicIntro.mdbasicIntro.md) for the instructions and terminal commands which can be directly copy-pasted on to the terminal.
+This section ties to the Video [Session 2](https://www.youtube.com/watch?v=GfUcsottFmU) titled Communication infrastructure of ROS (Part-1). Click [here](/Snippets/basicIntro.md) for the instructions and terminal commands which can be directly copy-pasted on to the terminal.
 
 <br>
 
@@ -28,17 +28,19 @@ This section ties to the Video [Session 2](https://www.youtube.com/watch?v=GfUcs
 
 This section ties to the Video [Session 2](https://www.youtube.com/watch?v=GfUcsottFmU) titled Communication infrastructure of ROS (Part-1). This section includes the terminal commands and CMakeLists.txt configuration code snippets used during the session.
 
-Package creation (common for both C++ and Python) - [here](/Snippets/pubsubpackage.md)\
-C++ based configuration and snippets  -  [here](Snippets/pubsubcpp.md)\
-Python based configuration and snippets - [here](Snippets/pubsubpython.md)
+Package creation (common for both C++ and Python) - [here](/Snippets/pubsub2package.md)\
+C++ based configuration and snippets  -  [here](Snippets/pubsub2cpp.md)\
+Python based configuration and snippets - [here](Snippets/pubsub2python.md)
 
 <br>
 
-## **ROS Custom Message, Service and Action definition**
+## **Custom Message Creation and Publisher and Subsciber**
 
 This section ties to the Video Session 3 titled Communication infrastructure of ROS (Part-1). This section includes the terminal commands and CMakeLists.txt configuration code snippets used during the session.
 
-Configuration and snippets  -  [here](/Snippets/custom_msg_srv_action.md)
+Package creation (common for both C++ and Python) - [here](/Snippets/pubsub3package.md)\
+Custom msg creation and configuration  -  [here](/Snippets/custom_msg.md)\
+C++ based configuration and snippets  -  [here](Snippets/pubsub3cpp.md)
 
 <br>
 
@@ -47,6 +49,7 @@ Configuration and snippets  -  [here](/Snippets/custom_msg_srv_action.md)
 This section ties to the Video Session 3 titled Communication infrastructure of ROS (Part-2). This section includes the terminal commands and CMakeLists.txt configuration code snippets used during the session.
 
 Package creation (common for both C++ and Python) - [here](/Snippets/cliserverpackage.md)\
+Custom srv creation and configuration  -  [here](/Snippets/custom_srv.md)\
 C++ based configuration and snippets  -  [here](/Snippets/cliservercpp.md)\
 Python based configuration and snippets - [here](/Snippets/cliserverpython.md)
 
@@ -57,5 +60,6 @@ Python based configuration and snippets - [here](/Snippets/cliserverpython.md)
 This section ties to the Video Session 3 titled Communication infrastructure of ROS (Part-2). This section includes the terminal commands and CMakeLists.txt configuration code snippets used during the session.
 
 Package creation (common for both C++ and Python) - [here](/Snippets/actionpackage.md)\
+Custom srv creation and configuration  -  [here](/Snippets/custom_action.md)\
 C++ based configuration and snippets  -  [here](/Snippets/actioncpp.md)\
 Python based configuration and snippets - [here](/Snippets/actionpython.md)

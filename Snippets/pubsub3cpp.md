@@ -4,16 +4,11 @@
 
 Change
 ```sh
-rospy.init_node('talker', anonymous=True)
+ros::init(argc, argv,"talker");
 ```
 to
 ```sh
-rospy.init_node('publisher', anonymous=True)
-```
-Open a terminal in the file location and Run
-
-```sh
-chmod +x publisher.py
+ros::init(argc, argv,"publisher");
 ```
 
 <br>
@@ -28,22 +23,22 @@ to
 ```sh
 ros::init(argc, argv,"subscriber");
 ```
-and open a terminal in the file location and Run,
 
-```sh
-chmod +x subscriber.py
-```
 <br>
 
 ## CMakeLists.txt file modifications
 
-Open session2_pubsub/CMakeLists.txt and add following lines to the bottom of the file.
+Open session3_pubsub/CMakeLists.txt and add following lines to the bottom of the file.
 
 ```sh
-catkin_install_python(PROGRAMS scripts/subscriber.py scripts/publisher.py
-  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-)
+add_executable(publisher src/ publisher.cpp)
+target_link_libraries(publisher ${catkin_LIBRARIES})
+add_dependencies(publisher session3_pubsub_generate_messages_cpp)
 
+
+add_executable(subscriber src/subscriber.cpp)
+target_link_libraries(subscriber ${catkin_LIBRARIES})
+add_dependencies(subscriber session3_pubsub_generate_messages_cpp)
 ```
 
 ## Build the code 
@@ -75,7 +70,7 @@ Open a 2nd terminal in the workspace root and run,
 source devel/setup.bash
 ```
 ```sh
-rosrun session2_pubsub publisher.py
+rosrun session3_pubsub publisher
 ```
 
 Open a 3rd terminal in the workspace root and run,
@@ -84,5 +79,6 @@ Open a 3rd terminal in the workspace root and run,
 source devel/setup.bash
 ```
 ```sh
-rosrun session2_pubsub talker.py
+rosrun session3_pubsub subscriber
 ```
+
