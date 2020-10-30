@@ -8,7 +8,7 @@ Setup Information and terminal-command-snippets required for the robotics webina
 
 ## **ROS Installation**
 
-Depending on the ubuntu Operatting system you are using, the setup instructions may vary. Following are the mostly used systems,        
+Depending on the Ubuntu Operating system you are using, the setup instructions may vary. Following are the mostly used systems,        
 
 | Ubuntu system | ROS system |  Setup Instructions |
 |--------|:-------:|----------------------------------:|
@@ -28,7 +28,8 @@ This section ties to the Video [Session 2](https://www.youtube.com/watch?v=GfUcs
 
 This section ties to the Video [Session 2](https://www.youtube.com/watch?v=GfUcsottFmU) titled Communication infrastructure of ROS (Part-1). This section includes the terminal commands and CMakeLists.txt configuration code snippets used during the session.
 
-C++ based configuration and snippets  -  [here](Snippets/pubsubcpp.md)  
+Package creation (common for both C++ and Python) - [here](/Snippets/pubsubpackage.md)\
+C++ based configuration and snippets  -  [here](Snippets/pubsubcpp.md)\
 Python based configuration and snippets - [here](Snippets/pubsubpython.md)
 
 <br>
@@ -45,7 +46,8 @@ Configuration and snippets  -  [here](/Snippets/custom_msg_srv_action.md)
 
 This section ties to the Video Session 3 titled Communication infrastructure of ROS (Part-2). This section includes the terminal commands and CMakeLists.txt configuration code snippets used during the session.
 
-C++ based configuration and snippets  -  [here](/Snippets/cliservercpp.md)  
+Package creation (common for both C++ and Python) - [here](/Snippets/cliserverpackage.md)\
+C++ based configuration and snippets  -  [here](/Snippets/cliservercpp.md)\
 Python based configuration and snippets - [here](/Snippets/cliserverpython.md)
 
 <br>
@@ -54,5 +56,6 @@ Python based configuration and snippets - [here](/Snippets/cliserverpython.md)
 
 This section ties to the Video Session 3 titled Communication infrastructure of ROS (Part-2). This section includes the terminal commands and CMakeLists.txt configuration code snippets used during the session.
 
-C++ based configuration and snippets  -  [here](/Snippets/actioncpp.md)  
+Package creation (common for both C++ and Python) - [here](/Snippets/actionpackage.md)\
+C++ based configuration and snippets  -  [here](/Snippets/actioncpp.md)\
 Python based configuration and snippets - [here](/Snippets/actionpython.md)
