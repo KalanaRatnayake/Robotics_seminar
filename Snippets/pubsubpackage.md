@@ -14,7 +14,7 @@ catkin_create_pkg session2_pubsub std_msgs rospy roscpp
 ```sh
 catkin build
 ```
-or you can use following instead "catkin build"
+or you can use following which comes built-in instead "catkin build"
 ```sh
 catkin_make
 ```
