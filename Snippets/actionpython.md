@@ -25,7 +25,7 @@ chmod +x ac_client.py
 
 ## CMakeLists.txt file modifications
 
-Open session3_action/CMakeLists.txt and add following lines to the bottom of the file.
+Open session4_action/CMakeLists.txt and add following lines to the bottom of the file.
 
 ```sh
 catkin_install_python(PROGRAMS scripts/ac_client.py scripts/ac_server.py
@@ -63,7 +63,7 @@ Open a 2nd terminal in the workspace root and run,
 source devel/setup.bash
 ```
 ```sh
-rosrun session3_action ac_server.py
+rosrun session4_action ac_server.py
 ```
 
 Open a 3rd terminal in the workspace root and run,
@@ -72,5 +72,5 @@ Open a 3rd terminal in the workspace root and run,
 source devel/setup.bash
 ```
 ```sh
-rosrun session3_action ac_client.py
+rosrun session4_action ac_client.py
 ```

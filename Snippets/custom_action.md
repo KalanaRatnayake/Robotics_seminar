@@ -2,15 +2,15 @@
 
 ## Messages
 
-Create a action folder inside session3_action folder
+Create a action folder inside session4_action folder
 
 ```sh
-mkdir -p ~/ros_workspace/src/session3_action/action
+mkdir -p ~/ros_workspace/src/session4_action/action
 ```
 
 Open the folder 
 ```sh
-cd ~/ros_workspace/src/session3_action/action
+cd ~/ros_workspace/src/session4_action/action
 ```
 
 Create a .action file with desired name. (we will select custom.action as an example)
@@ -19,12 +19,16 @@ Create a .action file with desired name. (we will select custom.action as an exa
 code custom.action
 ```
 Inside the file add following lines, then save and close.
+
 ```sh
-uint8 start
+#goal definition
+int32 order
 ---
-uint8 finish
+#result definition
+int32[] sequence
 ---
-uint8 timeSpent
+#feedback
+int32[] sequence
 ```
 
 Open package.xml and add the following lines in the respective sections
@@ -65,7 +69,6 @@ add_action_files(DIRECTORY
   action
   FILES
   custom.action
-)
 )
 ```
 

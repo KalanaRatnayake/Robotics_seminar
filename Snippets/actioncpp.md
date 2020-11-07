@@ -2,17 +2,17 @@
 
 ## CMakeLists.txt file modifications
 
-Open session3_action/CMakeLists.txt and add following lines to the bottom of the file.
+Open session4_action/CMakeLists.txt and add following lines to the bottom of the file.
 
 ```sh
-add_executable(server src/server.cpp)
-target_link_libraries(server ${catkin_LIBRARIES})
-add_dependencies(server ${actionlib_tutorials_EXPORTED_TARGETS}
+add_executable(ac_server src/ac_server.cpp)
+target_link_libraries(ac_server ${catkin_LIBRARIES})
+add_dependencies(ac_server ${session4_action_EXPORTED_TARGETS})
 
 
 add_executable(ac_client src/ac_client.cpp)
 target_link_libraries(ac_client ${catkin_LIBRARIES})
-add_dependencies(ac_client ${actionlib_tutorials_EXPORTED_TARGETS})
+add_dependencies(ac_client ${session4_action_EXPORTED_TARGETS})
 ```
 
 ## Build the code 
@@ -44,7 +44,7 @@ Open a 2nd terminal in the workspace root and run,
 source devel/setup.bash
 ```
 ```sh
-rosrun session3_action server
+rosrun session4_action ac_server
 ```
 
 Open a 3rd terminal in the workspace root and run,
@@ -53,6 +53,6 @@ Open a 3rd terminal in the workspace root and run,
 source devel/setup.bash
 ```
 ```sh
-rosrun session3_action ac_client
+rosrun session4_action ac_client
 ```
 

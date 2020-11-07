@@ -9,7 +9,7 @@ Create a package inside src folder
 cd ~/ros_workshop/src
 ```
 ```sh
-catkin_create_pkg session3_action std_msgs actionlib rospy roscpp
+catkin_create_pkg session4_action std_msgs actionlib rospy roscpp
 ```
 ```sh
 catkin build

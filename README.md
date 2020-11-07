@@ -36,7 +36,7 @@ Python based configuration and snippets - [here](Snippets/pubsub2python.md)
 
 ## **Custom Message Creation and Publisher and Subsciber**
 
-This section ties to the Video Session 3 titled Communication infrastructure of ROS (Part-1). This section includes the terminal commands and CMakeLists.txt configuration code snippets used during the session.
+This section ties to the Video [Session 3](https://www.youtube.com/watch?v=ykdC1bTN8NA) titled Communication infrastructure of ROS (Part-1). This section includes the terminal commands and CMakeLists.txt configuration code snippets used during the session.
 
 Package creation (common for both C++ and Python) - [here](/Snippets/pubsub3package.md)\
 Custom msg creation and configuration  -  [here](/Snippets/custom_msg.md)\
@@ -46,7 +46,7 @@ C++ based configuration and snippets  -  [here](Snippets/pubsub3cpp.md)
 
 ## **ROS Server and Client**
 
-This section ties to the Video Session 3 titled Communication infrastructure of ROS (Part-2). This section includes the terminal commands and CMakeLists.txt configuration code snippets used during the session.
+This section ties to the Video [Session 3](https://www.youtube.com/watch?v=ykdC1bTN8NA) titled Communication infrastructure of ROS (Part-2). This section includes the terminal commands and CMakeLists.txt configuration code snippets used during the session.
 
 Package creation (common for both C++ and Python) - [here](/Snippets/cliserverpackage.md)\
 Custom srv creation and configuration  -  [here](/Snippets/custom_srv.md)\
@@ -57,9 +57,18 @@ Python based configuration and snippets - [here](/Snippets/cliserverpython.md)
 
 ## **ROS Action Server and Action Client**
 
-This section ties to the Video Session 3 titled Communication infrastructure of ROS (Part-2). This section includes the terminal commands and CMakeLists.txt configuration code snippets used during the session.
+This section ties to the Video Session 4 titled Robot Specific Infrastructure. This section includes the terminal commands and CMakeLists.txt configuration code snippets used during the session.
 
 Package creation (common for both C++ and Python) - [here](/Snippets/actionpackage.md)\
-Custom srv creation and configuration  -  [here](/Snippets/custom_action.md)\
+Custom action message creation and configuration  -  [here](/Snippets/custom_action.md)\
 C++ based configuration and snippets  -  [here](/Snippets/actioncpp.md)\
 Python based configuration and snippets - [here](/Snippets/actionpython.md)
+
+<br>
+
+## **ROS Gazebo and Robot Models**
+
+This section ties to the Video Session 4 titled Robot Specific Infrastructure. This section includes the terminal commands and configuration code snippets used during the session.
+
+Package creation  - [here](/Snippets/gazebo_package.md)\
+Package operation  - [here](/Snippets/gazebo_package_running.md)
