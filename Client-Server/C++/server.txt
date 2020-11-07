@@ -1,12 +1,12 @@
 #include "ros/ros.h"
-#include "beginner_tutorials/AddTwoInts.h"
+#include "session3_cliserver/custom.h"
 
-bool add(beginner_tutorials::AddTwoInts::Request  &req,
-         beginner_tutorials::AddTwoInts::Response &res)
+bool add(session3_cliserver::custom::Request  &req,
+         session3_cliserver::custom::Response &res)
 {
-  res.sum = req.a + req.b;
+  res.result = req.a + req.b;
   ROS_INFO("request: x=%ld, y=%ld", (long int)req.a, (long int)req.b);
-  ROS_INFO("sending back response: [%ld]", (long int)res.sum);
+  ROS_INFO("sending back response: [%ld]", (long int)res.result);
   return true;
 }
 

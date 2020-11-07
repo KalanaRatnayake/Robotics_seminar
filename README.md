@@ -1,169 +1,65 @@
 # Robotics_seminar
-Instructions to setup your computer for the second session of the robotics webinar series
 
-# ROS Noetic Installation (for Ubuntu 20.04)
+A basic introduction to ROS and Robotics can be found in the [Session 1](https://www.youtube.com/watch?v=GO0jsZix18k) of webinar series.
 
-Setup your computer to accept ROS related software
+Setup Information and terminal-command-snippets required for the robotics webinar series can be found in following sections. 
 
-```sh
-sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-```
+<br>
 
-Then setup keys
+## **ROS Installation**
 
-```sh
-sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
-```
+Depending on the Ubuntu Operating system you are using, the setup instructions may vary. Following are the mostly used systems,        
 
-To install ROS, 
+| Ubuntu system | ROS system |  Setup Instructions |
+|--------|:-------:|----------------------------------:|
+| 20.04  | Noetic  | [link](/Snippets/InstallNoetic.md) |
+| 18.04  | Melodic | [link](/Snippets/InstallMelodic.md)|
+| 16.04  | Kinetic | [link](/Snippets/InstallKinetic.md)|
 
-```sh
-sudo apt update
-```
+<br>
 
-```sh
-sudo apt install ros-noetic-desktop-full
-```
+## **ROS Workspace and Packages**
 
-Setup environment
+This section ties to the Video [Session 2](https://www.youtube.com/watch?v=GfUcsottFmU) titled Communication infrastructure of ROS (Part-1). Click [here](/Snippets/basicIntro.md) for the instructions and terminal commands which can be directly copy-pasted on to the terminal.
 
-```sh
-echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
-```
+<br>
 
-```sh
-source ~/.bashrc
-```
+## **ROS Publisher and Subscriber**
 
-Dependencies
+This section ties to the Video [Session 2](https://www.youtube.com/watch?v=GfUcsottFmU) titled Communication infrastructure of ROS (Part-1). This section includes the terminal commands and CMakeLists.txt configuration code snippets used during the session.
 
-```sh
-sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
-```
+Package creation (common for both C++ and Python) - [here](/Snippets/pubsub2package.md)\
+C++ based configuration and snippets  -  [here](Snippets/pubsub2cpp.md)\
+Python based configuration and snippets - [here](Snippets/pubsub2python.md)
 
-```sh
-sudo rosdep init
-```
+<br>
 
-```sh
-rosdep update
-```
+## **Custom Message Creation and Publisher and Subsciber**
 
-To setup catkin tools
-```sh
-pip3 install catkin_tools
-```
+This section ties to the Video Session 3 titled Communication infrastructure of ROS (Part-1). This section includes the terminal commands and CMakeLists.txt configuration code snippets used during the session.
 
+Package creation (common for both C++ and Python) - [here](/Snippets/pubsub3package.md)\
+Custom msg creation and configuration  -  [here](/Snippets/custom_msg.md)\
+C++ based configuration and snippets  -  [here](Snippets/pubsub3cpp.md)
 
-Setup VS code as text editor
+<br>
 
-# ROS Melodic Installation (for Ubuntu 18.04)
+## **ROS Server and Client**
 
-Setup your computer to accept ROS related software
+This section ties to the Video Session 3 titled Communication infrastructure of ROS (Part-2). This section includes the terminal commands and CMakeLists.txt configuration code snippets used during the session.
 
-```sh
-sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-```
+Package creation (common for both C++ and Python) - [here](/Snippets/cliserverpackage.md)\
+Custom srv creation and configuration  -  [here](/Snippets/custom_srv.md)\
+C++ based configuration and snippets  -  [here](/Snippets/cliservercpp.md)\
+Python based configuration and snippets - [here](/Snippets/cliserverpython.md)
 
-Then setup keys
+<br>
 
-```sh
-sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
-```
+## **ROS Action Server and Action Client**
 
-To install ROS, 
+This section ties to the Video Session 3 titled Communication infrastructure of ROS (Part-2). This section includes the terminal commands and CMakeLists.txt configuration code snippets used during the session.
 
-```sh
-sudo apt update
-```
-
-```sh
-sudo apt install ros-melodic-desktop-full
-```
-
-Setup environment
-
-```sh
-echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
-```
-
-```sh
-source ~/.bashrc
-```
-
-Dependencies
-
-```sh
-sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
-```
-
-```sh
-sudo rosdep init
-```
-
-```sh
-rosdep update
-```
-
-To setup catkin tools
-```sh
-pip3 install catkin_tools
-```
-
-Setup VS code as text editor
-
-# ROS Kinetic Installation (for Ubuntu 16.04)
-
-Setup your computer to accept ROS related software
-
-```sh
-sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-```
-
-Then setup keys
-
-```sh
-sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
-```
-
-To install ROS, 
-
-```sh
-sudo apt update
-```
-
-```sh
-sudo apt-get install ros-kinetic-desktop-full
-```
-
-Setup environment
-
-```sh
-echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
-```
-
-```sh
-source ~/.bashrc
-```
-
-Dependencies
-
-```sh
-sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
-```
-
-```sh
-sudo rosdep init
-```
-
-```sh
-rosdep update
-```
-
-To setup catkin tools
-```sh
-pip3 install catkin_tools
-```
-
-
-Setup VS code as text editor
+Package creation (common for both C++ and Python) - [here](/Snippets/actionpackage.md)\
+Custom srv creation and configuration  -  [here](/Snippets/custom_action.md)\
+C++ based configuration and snippets  -  [here](/Snippets/actioncpp.md)\
+Python based configuration and snippets - [here](/Snippets/actionpython.md)
