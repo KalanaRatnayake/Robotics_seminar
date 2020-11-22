@@ -4,7 +4,7 @@
 ## Syntax
 
 ```sh
-<node pkg="evaluator" type="evaluator_node" name="evaluator" output="screen" />
+<node pkg=<package name> type=<node name> name=<node visible name> output=<type> />
 ```
 
 <br>
